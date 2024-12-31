@@ -4,6 +4,7 @@ let table = document.getElementById("usersTable");
 let data = [];
 
 
+//fetching data
 async function fetchData() {
     const response = await fetch("https://jsonplaceholder.typicode.com/users");
     data = await response.json();
@@ -30,7 +31,6 @@ function tableConstruct(data) {
 
   const tableBody = document.getElementById("tableBody");
 
-  // ?tableBody.innerHTML = "";
   data.forEach((element) => {
     //---------putting data into dynamic table
     document.getElementById("tableBody").innerHTML += `

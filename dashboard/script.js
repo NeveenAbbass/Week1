@@ -53,7 +53,7 @@ function mappingCompanies(data){
 }
 
 
-//----------------search functionality ----------------
+//----------------search by name functionality ----------------
 function searchByName() {
   document.getElementById("search").addEventListener("input", (e) => {
     let searchVal = e.target.value 
